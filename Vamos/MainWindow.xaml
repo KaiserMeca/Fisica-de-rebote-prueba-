@@ -1,0 +1,22 @@
+﻿<Window x:Class="Vamos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:View ="clr-namespace:Vamos.View" 
+        xmlns:View1 ="clr-namespace:Vamos.View" 
+        xmlns:View2 ="clr-namespace:Vamos.View" 
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Background="Black" Width="1200" Height="500">
+    <Grid>
+        <View:UserControl1 x:Name="UserControl1" ></View:UserControl1>
+        <Grid>
+            <View2:UserControl2 x:Name="UserControl2" ></View2:UserControl2>
+        </Grid>
+        <Grid>
+            <View1:UserControl3 x:Name="UserControl3" ></View1:UserControl3>
+        </Grid>
+    </Grid>
+    
+</Window>

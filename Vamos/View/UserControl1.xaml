@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Vamos.View.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" x:Name="SelfUserControl"
+             Height="{Binding Path=HeightValue, Mode=TwoWay}" Width="{Binding Path=WidthValue, Mode=TwoWay}">
+    <Canvas Name="PrincipalCcanvas">
+        <Rectangle x:Name="Bola" RadiusX="25" RadiusY="25" Width="10" Height="10" Fill="White" Stroke="AliceBlue"  
+                   Canvas.Left="{Binding Path=MoveLeft, Mode=OneWay}" Canvas.Top="{Binding Path=MoveTop, Mode=OneWay}">
+        </Rectangle>
+    </Canvas>
+</UserControl>
